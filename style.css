@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #26cc3c,#000000);
+    color: white;
+    font-family: "Amatic SC", sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 3vw ;
+    color: #ffffff 
+}
+
+header,form{
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form input, form button{
+    padding: 0.5vw;
+    font-size: 1.5vw;
+    border: none;
+    background: rgba(13, 75, 23, 0.623);
+    color: white;
+    
+}
+
+form button{
+    color: rgb(0, 0, 0);
+    padding: 10;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+form input{
+    width: 20vw;
+}
+
+form button:hover{
+    color: rgba(13, 75, 23, 0.623);
+    background: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 3vw;
+}
+
+.list{
+    min-width: 30%;
+    list-style: none;
+    
+}
+
+.taskDiv{
+    margin: 0.5vw;
+    padding: 0 0 0 0.6vw;
+    font-size: 2vw;
+    display: flex;
+    border: 1px solid white;
+    justify-content: space-between;
+    transition: ease 0.5s;
+}
+
+.taskDiv li{
+    flex: 0.97;
+    
+}
+
+.doneButton, .deleteButton{
+    min-width: 2vw;
+    max-height: 4vh;
+    color: rgba(13, 75, 23, 0.623);
+    background: rgb(126, 182, 140);
+    
+    margin: 1vh 0.5vw 1vh 0vw;
+    transition: ease 0.5s;
+}
+
+.doneButton{
+    margin: 1vh 0.5vw 1vh 5vw;
+}
+
+.doneButton:hover, .deleteButton:hover{
+    color: white;
+    background:rgba(59, 168, 77, 0.623);
+    cursor: pointer;
+}
+
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+
+.finished{
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
